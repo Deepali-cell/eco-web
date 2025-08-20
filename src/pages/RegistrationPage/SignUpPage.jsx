@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import toast from "react-hot-toast";
-import myContext from "../../components/Context/MyContext";
 import Loader from "../../components/Loader/Loader";
 import { auth, fireDB } from "../../Firebase/FirebaseConfig";
+import myContext from "../../context/myContext";
 
 const SignUpPage = () => {
   const context = useContext(myContext);

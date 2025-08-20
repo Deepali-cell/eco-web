@@ -7,7 +7,7 @@ import OrderDetail from "./OrderDetail";
 import UserDetail from "./UserDetail";
 import DetailProduct from "./DetailProduct";
 import { useContext } from "react";
-import myContext from "../context/myContext";
+import myContext from "../../context/myContext";
 
 function Admindashboard() {
   const user = JSON.parse(localStorage.getItem("users"));

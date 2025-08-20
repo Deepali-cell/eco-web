@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import myContext from "../context/myContext";
+import myContext from "../../context/myContext";
 import { deleteDoc, doc } from "firebase/firestore";
 import { fireDB } from "../../Firebase/FirebaseConfig";
 import toast from "react-hot-toast";

@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import myContext from "../../components/context/myContext";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { doc, getDoc, setDoc, Timestamp } from "firebase/firestore";
 import { fireDB } from "../../Firebase/FirebaseConfig";
@@ -32,9 +31,6 @@ function UpdateProduct() {
       name: "books",
     },
   ];
-
-  const context = useContext(myContext);
-  const { getadminaddproduct } = context;
   const navigate = useNavigate();
   const { id } = useParams();
   const [product, setproduct] = useState({

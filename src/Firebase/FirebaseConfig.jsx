@@ -12,9 +12,16 @@ const firebaseConfig = {
   measurementId: "G-W8WPMYYPLF",
 };
 
-// Initialize Firebase
+// Initialize
 const app = initializeApp(firebaseConfig);
+
+// Firestore (Cloud Database)
 const fireDB = getFirestore(app);
+
+// Realtime Database (if using this instead of Firestore)
+// export const realDb = getDatabase(app);
+
+// for authentication
 const auth = getAuth(app);
 
 export { fireDB, auth };

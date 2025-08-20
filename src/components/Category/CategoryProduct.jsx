@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import myContext from "../context/myContext";
+import myContext from "../../context/myContext";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../../Redux/cartSlice";
 import toast from "react-hot-toast";

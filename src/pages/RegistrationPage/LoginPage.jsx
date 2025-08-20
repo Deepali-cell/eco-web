@@ -2,10 +2,11 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth, fireDB } from "../../firebase/FirebaseConfig";
+import { auth, fireDB } from "../../Firebase/FirebaseConfig";
+
 import Loader from "../../components/Loader/Loader";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
-import myContext from "../../components/context/myContext";
+import myContext from "../../context/myContext";
 
 const LoginPage = () => {
   const context = useContext(myContext);
@@ -118,7 +119,7 @@ const LoginPage = () => {
 
         <div>
           <h2 className="text-black">
-            Don't Have an account{" "}
+            Don&apos;t Have an account{" "}
             <Link className=" text-pink-500 font-bold" to={"/signuppage"}>
               Signup
             </Link>

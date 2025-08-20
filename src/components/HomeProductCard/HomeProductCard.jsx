@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import myContext from "../context/myContext";
+import myContext from "../../context/myContext";
 import { useContext, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../../Redux/cartSlice";

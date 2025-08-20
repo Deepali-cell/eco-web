@@ -10,7 +10,7 @@ import AdminDashBoard from "./pages/DashBoardsPage/AdminDashBoard";
 import AddProductPage from "./pages/DashBoardsPage/AddProductPage";
 import UpdateProductPage from "./pages/DashBoardsPage/UpdateProductPage";
 import { Toaster } from "react-hot-toast";
-import MyState from "./components/context/myState";
+import MyState from "./context/myState";
 import LoginPage from "./pages/RegistrationPage/LoginPage";
 import SignUpPage from "./pages/RegistrationPage/SignUpPage";
 import AdminProtectedRoute from "./ProtectedRoute/AdminProtectedRoute";
@@ -43,7 +43,6 @@ function App() {
             path="/admindashboard"
             element={
               <AdminProtectedRoute>
-                {" "}
                 <AdminDashBoard />
               </AdminProtectedRoute>
             }

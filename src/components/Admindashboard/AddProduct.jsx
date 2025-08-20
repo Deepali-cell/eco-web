@@ -1,7 +1,7 @@
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { fireDB } from "../../firebase/FirebaseConfig";
+import { fireDB } from "../../Firebase/FirebaseConfig";
 import { useNavigate } from "react-router-dom";
 
 function AddProduct() {

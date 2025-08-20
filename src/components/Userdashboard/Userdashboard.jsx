@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import img1 from "../../assets/testimonial1.png";
-import myContext from "../context/myContext";
+import myContext from "../../context/myContext";
 
 function Userdashboard() {
   const user = JSON.parse(localStorage.getItem("users"));

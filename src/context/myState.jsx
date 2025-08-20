@@ -8,7 +8,7 @@ import {
   orderBy,
   query,
 } from "firebase/firestore";
-import { fireDB } from "../../Firebase/FirebaseConfig";
+import { fireDB } from "../Firebase/FirebaseConfig";
 import toast from "react-hot-toast";
 
 function MyState({ children }) {

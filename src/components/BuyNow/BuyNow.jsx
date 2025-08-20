@@ -2,7 +2,7 @@ import { Button, Dialog, DialogBody } from "@material-tailwind/react";
 import { useState } from "react";
 import { Timestamp } from "firebase/firestore";
 import { addDoc, collection } from "firebase/firestore";
-import { fireDB } from "../../firebase/FirebaseConfig";
+import { fireDB } from "../../Firebase/FirebaseConfig";
 import toast from "react-hot-toast";
 
 const BuyNow = ({ cartItems }) => {
